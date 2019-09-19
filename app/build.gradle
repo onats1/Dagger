@@ -28,7 +28,8 @@ dependencies {
     annotationProcessor 'com.google.dagger:dagger-compiler:2.22'
 
     implementation 'com.google.dagger:dagger-android:2.22'
-    implementation 'com.google.dagger:dagger-android-support:2.22' // if you use the support libraries
+    implementation 'com.google.dagger:dagger-android-support:2.22'
+    // if you use the support libraries
     annotationProcessor 'com.google.dagger:dagger-android-processor:2.22'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -53,9 +54,15 @@ dependencies {
 
     // Rx-Retrofit Call Adapter
     def rxcalladapter_version = '2.5.0'
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$rxcalladapter_version" // Retrofit call adapter
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rxcalladapter_version"
+    // Retrofit call adapter
 
     // RxAndroid
     def rxandroid_version = '2.1.1'
     implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+    // Reactive Streams (convert Observable to LiveData)
+    def reactivestreams_version = "1.1.1"
+    implementation "android.arch.lifecycle:reactivestreams:$reactivestreams_version"
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
 }

@@ -13,5 +13,4 @@ public interface AuthApi {
             @Path("id")int id
     );
 
-
 }
