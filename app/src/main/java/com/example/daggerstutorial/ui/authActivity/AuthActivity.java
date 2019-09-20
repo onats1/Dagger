@@ -106,6 +106,7 @@ public class AuthActivity extends DaggerAppCompatActivity implements View.OnClic
     private void openMainActivity(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 
     private void showProgressBar(boolean state) {

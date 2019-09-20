@@ -51,7 +51,6 @@ public class PostFragment extends DaggerFragment {
         postViewModel = ViewModelProviders.of(this, providerFactory).get(PostViewModel.class);
         subscribeObservers();
         initRecycler();
-        Toast.makeText(getActivity(), "Post Fragment", Toast.LENGTH_SHORT).show();
     }
 
     private void subscribeObservers(){
