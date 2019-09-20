@@ -47,7 +47,6 @@ public class AuthActivity extends DaggerAppCompatActivity implements View.OnClic
 
     ProgressBar progressBar;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

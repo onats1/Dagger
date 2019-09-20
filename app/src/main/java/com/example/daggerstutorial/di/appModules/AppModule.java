@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.daggerstutorial.R;
+import com.example.daggerstutorial.SessionManager;
 
 import javax.inject.Singleton;
 
@@ -54,5 +55,11 @@ public class AppModule {
     @Provides
     static Drawable provideAppDrawable(Application application){
         return ContextCompat.getDrawable(application, R.drawable.logo);
+    }
+
+    @Singleton
+    @Provides
+    static SessionManager provideSessionManager(){
+        return new SessionManager();
     }
 }
